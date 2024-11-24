@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sorting Visualization</h1>
+    <div>
+        <label for="arrayInput">Enter values (comma-separated):</label>
+        <input type="text" id="arrayInput" placeholder="e.g., 7,4,2,3,4,5,4">
+        <button onclick="generateArray()">Generate</button>
+    </div>
+    <div>
+        <button onclick="sortArray('bubble')">Bubble Sort</button>
+        <button onclick="sortArray('selection')">Selection Sort</button>
+        <button onclick="resetArray()">Reset</button>
+    </div>
+    <div id="visualization" class="visualization"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
